@@ -5,15 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Sekure - Security Systems HTML5 Template">
+  <meta name="description" content="securelink - Security Systems HTML5 Template">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Sekure - Security Systems HTML5 Template</title>
+  <title>securelink - Security Systems HTML5 Template</title>
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Mantiene las tarjetas con imágenes uniformes */
+    .shop-grid .product__img {
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #f5f5f5;
+    }
+
+    .shop-grid .product__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
@@ -223,8 +240,8 @@
                   <i class="icon-phone"></i>
                 </div>
                 <div>
-                  <a class="phone__link d-block" href="tel:00201061245741">02 01061245741</a>
-                  <a class="email__link d-block" href="mailto:Sekure@7oroof.com">Sekure@7oroof.com</a>
+                  <a class="phone__link d-block" href="tel:+16310000000">631 000 0000</a>
+                  <a class="email__link d-block" href="mailto:Info@securelink-llc.com">Info@securelink-llc.com</a>
                 </div>
               </div>
             </li>
@@ -281,7 +298,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-8 col-lg-9">
             <div class="sorting-options d-flex flex-wrap justify-content-between align-items-center mb-30">
-              <strong class="color-secondary">Showing 1:9 of 45 product</strong>
+              <strong class="color-secondary" id="products-count">Showing products</strong>
               <select>
                 <option selected="" value="0">Sort by latest</option>
                 <option value="1">Sort by Popular</option>
@@ -290,156 +307,591 @@
               </select>
             </div>
             <div class="row">
-              <!-- Product item #1 -->
+              <!-- Amazon product #1 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/1.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/45c5wa2" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/61lKPMDJUAL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/45c5wa2" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">HD Lens Camera</a></h4>
-                    <span class="product__price">$18.99</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/45c5wa2" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #2 -->
+              <!-- Amazon product #2 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/2.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/4qcKa4r" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/61eDheLnKJL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/4qcKa4r" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">Wireless Camera</a></h4>
-                    <span class="product__price">$12,99</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4qcKa4r" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #3 -->
+              <!-- Amazon product #3 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/3.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/48IWP9H" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/61MGkxU2FQL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/48IWP9H" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">CCTV Camera</a></h4>
-                    <span class="product__price">$19,99</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/48IWP9H" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #4 -->
+              <!-- Amazon product #4 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/4.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/4pKud5Z" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/71VeRTh4zTL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/4pKud5Z" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">HD Wi-Fi Home Camera</a></h4>
-                    <span class="product__price">$33.00</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4pKud5Z" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #5 -->
+              <!-- Amazon product #5 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/5.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/3YxVsEE" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/61yUcY5tqhL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/3YxVsEE" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">Ultra HD DVR System</a></h4>
-                    <span class="product__price">$63.00</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/3YxVsEE" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #6 -->
+              <!-- Amazon product #6 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/6.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/4agxuFf" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/61bTzQPpy5L._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/4agxuFf" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">Ultra HD DVR System</a></h4>
-                    <span class="product__price">$12,99</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4agxuFf" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #7 -->
+              <!-- Amazon product #7 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/7.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/4oU5F9r" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/717M02VlA5L._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/4oU5F9r" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">1080p WiFi Camera</a></h4>
-                    <span class="product__price">$38,00</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4oU5F9r" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #8 -->
+              <!-- Amazon product #8 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/8.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/4aR7OPA" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/51vFqML7kQL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/4aR7OPA" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">WiFi Add-On Camera</a></h4>
-                    <span class="product__price">$16,00</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4aR7OPA" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
-              <!-- Product item #9 -->
+              <!-- Amazon product #9 -->
               <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="product-item">
                   <div class="product__img">
-                    <img src="assets/images/products/9.jpg" alt="Product" loading="lazy">
+                    <a href="https://amzn.to/4j6N1Ke" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41XqJWd6AWL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
                     <div class="product__action">
-                      <button class="btn btn__primary">
-                        <i class="icon-cart"></i>
-                      </button>
+                      <a class="btn btn__primary" href="https://amzn.to/4j6N1Ke" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
                     </div><!-- /.product-action -->
                   </div><!-- /.product-img -->
                   <div class="product__info">
-                    <h4 class="product__title"><a href="#">HD Wi-Fi Home Camera</a></h4>
-                    <span class="product__price">$18.99</span>
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4j6N1Ke" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #10 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/3KDnNq1" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41PtTAiUr-L._AC_SL1200_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/3KDnNq1" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/3KDnNq1" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #11 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4oYQHPl" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41dYnMHisXL._AC_SL1200_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4oYQHPl" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4oYQHPl" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #12 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4pGXKNL" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/51r9ofpkGtL._AC_SL1200_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4pGXKNL" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4pGXKNL" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #13 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/3KOLawS" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41NToAgGstL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/3KOLawS" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/3KOLawS" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #14 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/3Yx62Mc" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41vOE58RulL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/3Yx62Mc" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/3Yx62Mc" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #15 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/48J4Hbf" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41dxWFcj+dL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/48J4Hbf" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/48J4Hbf" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #16 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4qiSKyV" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/31vnZKOlbXL._SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4qiSKyV" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4qiSKyV" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #17 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/48QNU6d" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41agIHypnvL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/48QNU6d" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/48QNU6d" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #18 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/45aMssM" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/516ehKrv9fL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/45aMssM" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/45aMssM" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #19 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/48N2tGk" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/71JtwHVERGL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/48N2tGk" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/48N2tGk" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #20 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4qiTqEt" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/411MQMF59OL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4qiTqEt" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4qiTqEt" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #21 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4oTSl4J" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41hUMZVbMSL._AC_SL1200_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4oTSl4J" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4oTSl4J" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #22 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4agflr5" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/31Wj0r3zzlL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4agflr5" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4agflr5" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #23 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/44uXsRC" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/61jQbekIsbL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/44uXsRC" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/44uXsRC" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #24 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4iXQoms" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/514DGZG5XyL._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4iXQoms" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4iXQoms" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #25 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4phrznj" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/41FUTlOSjOL.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4phrznj" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4phrznj" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #26 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/44wAhXa" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/919tTYGvD3L._AC_SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/44wAhXa" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/44wAhXa" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #27 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/4aUYieh" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/81dBzIP7K7L._SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/4aUYieh" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/4aUYieh" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
+                  </div><!-- /.product-content -->
+                </div><!-- /.product-item -->
+              </div><!-- /.col-lg-4 -->
+              <!-- Amazon product #28 -->
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="product-item">
+                  <div class="product__img">
+                    <a href="https://amzn.to/3L6mzUe" target="_blank" rel="noopener nofollow">
+                      <img src="https://m.media-amazon.com/images/I/71uMhi9815L._SL1500_.jpg" alt="CCTV Camera Amazon" loading="lazy">
+                    </a>
+                    <div class="product__action">
+                      <a class="btn btn__primary" href="https://amzn.to/3L6mzUe" target="_blank" rel="noopener nofollow">
+                        Ver en Amazon
+                      </a>
+                    </div><!-- /.product-action -->
+                  </div><!-- /.product-img -->
+                  <div class="product__info">
+                    <h4 class="product__title">
+                      <a href="https://amzn.to/3L6mzUe" target="_blank" rel="noopener nofollow">CCTV Camera</a>
+                    </h4>
+                    <span class="product__price">Ver precio en Amazon</span>
                   </div><!-- /.product-content -->
                 </div><!-- /.product-item -->
               </div><!-- /.col-lg-4 -->
@@ -447,11 +899,7 @@
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-12 text-center">
                 <nav class="pagination-area">
-                  <ul class="pagination justify-content-center">
-                    <li><a class="current" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                  </ul>
+                  <ul class="pagination justify-content-center"></ul>
                 </nav><!-- /.pagination-area -->
               </div><!-- /.col-lg-12 -->
             </div><!-- /.row -->
@@ -559,17 +1007,18 @@
                 <p>If you have any questions or need help, feel free to contact with our team.</p>
                 <ul class="contact__list list-unstyled">
                   <li>
-                    <a href="mailto:Sekure@7oroof.com">
-                      <i class="contact__icon icon-email"></i> <span>Sekure@7oroof.com</span>
+                    <a href="mailto:Info@securelink-llc.com">
+                      <i class="contact__icon icon-email"></i> <span>Info@securelink-llc.com</span>
                     </a>
                   </li>
                   <li>
-                    <a href="tel:00201061245741">
-                      <i class="contact__icon icon-phone"></i> <span>(002) 01061245741</span>
+                    <a href="tel:+16310000000">
+                      <i class="contact__icon icon-phone"></i> <span>631 000 0000</span>
                     </a>
                   </li>
                 </ul>
-                <p>2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
+                <p>204 AIRPORT PLAZA BLVD NUM 1113
+FARMINGDALE, NY 11735</p>
                 <a href="contact-us.html" class="btn btn__white btn__link mr-30">
                   <i class="fas fa-map-marker-alt"></i> <span>Get Directions</span>
                 </a>
@@ -644,8 +1093,8 @@
             <div
               class="col-sm-12 col-md-8 col-lg-12 col-xl-8 offset-xl-2 d-flex flex-wrap justify-content-between align-items-center">
               <div class="footer__copyrights">
-                <span class="fz-14">&copy; 2022 Sekure, All Rights Reserved. With Love by </span>
-                <a class="fz-14 color-primary" href="http://themeforest.net/user/7oroof">7oroof.com</a>
+                <span class="fz-14">&copy; 2022 securelink, All Rights Reserved. </span>
+                <a class="fz-14 color-primary" href="https://ks-techconsulting.com/">ks-techconsulting.com</a>
               </div>
               <nav>
                 <ul class="list-unstyled footer__copyright-links d-flex flex-wrap mb-0">
@@ -671,6 +1120,64 @@
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    // Paginación simple en el cliente y contador dinámico
+    document.addEventListener('DOMContentLoaded', function () {
+      const pageSize = 12;
+      const productCols = Array.from(document.querySelectorAll('.shop-grid .product-item'))
+        .map(item => item.closest('.col-sm-6, .col-md-6, .col-lg-4') || item.parentElement);
+      const paginationList = document.querySelector('.pagination-area .pagination');
+      const counter = document.getElementById('products-count');
+      const total = productCols.length;
+      if (!total || !paginationList) return;
+
+      const totalPages = Math.ceil(total / pageSize);
+      let currentPage = 1;
+
+      function render(page) {
+        currentPage = Math.min(Math.max(page, 1), totalPages);
+        productCols.forEach((col, idx) => {
+          const pageIndex = Math.floor(idx / pageSize) + 1;
+          col.style.display = pageIndex === currentPage ? '' : 'none';
+        });
+
+        const start = (currentPage - 1) * pageSize + 1;
+        const end = Math.min(currentPage * pageSize, total);
+        if (counter) {
+          counter.textContent = `Showing ${start}:${end} of ${total} products`;
+        }
+
+        paginationList.innerHTML = '';
+        for (let p = 1; p <= totalPages; p++) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = '#';
+          a.textContent = p;
+          if (p === currentPage) a.classList.add('current');
+          a.addEventListener('click', function (evt) {
+            evt.preventDefault();
+            render(p);
+          });
+          li.appendChild(a);
+          paginationList.appendChild(li);
+        }
+        if (currentPage < totalPages) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = '#';
+          a.innerHTML = '<i class="fa fa-angle-right"></i>';
+          a.addEventListener('click', function (evt) {
+            evt.preventDefault();
+            render(currentPage + 1);
+          });
+          li.appendChild(a);
+          paginationList.appendChild(li);
+        }
+      }
+
+      render(1);
+    });
+  </script>
 </body>
 
 </html>

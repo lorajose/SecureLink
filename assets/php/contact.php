@@ -1,14 +1,15 @@
 <?php require("PHPMailer/PHPMailerAutoload.php");
 
 // ADD your Email and Name
-$recipientEmail='your@email';
-$recipientName='your Name';
+$recipientEmail='Info@securelink-llc.com';
+$recipientName='SecureLink LLC';
 
 //collect the posted variables into local variables before calling $mail = new mailer
 
-$senderName = $_POST['contact-name'];
-$senderPhone = $_POST['contact-phone'];
-$senderMessage= $_POST['contact-message'];
+$senderName = isset($_POST['contact-name']) ? $_POST['contact-name'] : '';
+$senderEmail = isset($_POST['contact-email']) ? $_POST['contact-email'] : '';
+$senderPhone = isset($_POST['contact-phone']) ? $_POST['contact-phone'] : '';
+$senderMessage = isset($_POST['contact-message']) ? $_POST['contact-message'] : '';
 $senderSubject = 'New Message From ' . $senderName;
 
 //Create a new PHPMailer instance
@@ -17,16 +18,13 @@ $mail = new PHPMailer();
 //Set who the message is to be sent from
 $mail->setFrom($recipientEmail, $recipientName);
 //Set an alternative reply-to address
-$mail->addReplyTo($senderEmail,$senderName);
+$mail->addReplyTo($senderEmail, $senderName);
 //Set who the message is to be sent to
-$mail->addAddress($senderEmail, $senderName );
+$mail->addAddress($recipientEmail, $recipientName);
 //Set the subject line
 $mail->Subject = $senderSubject;
 
-$mail->Body = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
-
-$mail->MsgHTML($body);
-$mail->AddAddress($recipientEmail, $recipientName);
+// $mail->Body = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
 
 //$mail-&gt;AddAttachment("images/phpmailer.gif"); // attachment
 //$mail-&gt;AddAttachment("images/phpmailer_mini.gif"); // attachment
@@ -37,7 +35,7 @@ $message .= '<table rules="all" style="border:1px solid #666;width:300px;" cellp
 $message .= ($senderName) ? "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . $senderName . "</td></tr>" : '';
 $message .= ($senderEmail) ?"<tr><td><strong>Email:</strong> </td><td>" . $senderEmail . "</td></tr>" : '';
 $message .= ($senderPhone) ?"<tr><td><strong>Phone:</strong> </td><td>" . $senderPhone . "</td></tr>" : '';
-$message .= ($senderMessage) ?"<tr><td><strong>Email:</strong> </td><td>" . $senderMessage . "</td></tr>" : '';
+$message .= ($senderMessage) ?"<tr><td><strong>Message:</strong> </td><td>" . $senderMessage . "</td></tr>" : '';
 
 $message .= "</table>";
 $message .= "</body></html>";
